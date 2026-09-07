@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff7e8" />
+    <meta
+      name="description"
+      content="GeoCities — your place on the internet."
+    />
+    <title>GeoCities — Alice's home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a
+          class="brand"
+          href="#home"
+          data-view-link="home"
+          aria-label="GeoCities home"
+          ><span>✦</span>geo<b>cities</b></a
+        >
+        <div class="identity-mini">
+          <span class="avatar avatar-alice">A</span
+          ><span><strong>Alice</strong><small>alice.geocities.eth</small></span
+          ><i class="online-dot" aria-label="Online"></i>
+        </div>
+        <nav class="primary-nav">
+          <button class="nav-item is-active" data-view="home">
+            <span>⌂</span>Home
+          </button>
+          <button class="nav-item" data-view="wallet">
+            <span>◒</span>Wallet
+          </button>
+          <button class="nav-item" data-view="explore">
+            <span>⌕</span>Explore
+          </button>
+          <button class="nav-item" data-view="site">
+            <span>▧</span>My site
+          </button>
+          <button class="nav-item" data-view="settings">
+            <span>⚙</span>Settings
+          </button>
+        </nav>
+        <section class="webmaster-card">
+          <p class="eyebrow">YOUR WEBMASTER</p>
+          <span class="sparkle">✦</span>
+          <h2>Got an idea?</h2>
+          <p>Tell your AI what you want to make.</p>
+          <button data-compose>Start creating <span>→</span></button>
+        </section>
+        <button
+          class="profile-button"
+          data-toast="Identity switcher coming soon"
+        >
+          <span class="avatar avatar-alice">A</span
+          ><span>Alice <small>alice.geocities.eth</small></span
+          ><b>⌄</b>
+        </button>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <button class="mobile-brand brand" data-view-link="home">
+            <span>✦</span>geo<b>cities</b>
+          </button>
+          <p>Tuesday, October 24 <span>☼</span></p>
+          <div>
+            <button
+              class="icon-button"
+              data-toast="You're all caught up"
+              aria-label="Notifications"
+            >
+              ♧<i></i></button
+            ><button class="compose-button" data-compose>
+              <b>+</b> Create
+            </button>
+          </div>
+        </header>
+
+        <section class="view is-active" id="home" aria-labelledby="home-title">
+          <div class="welcome">
+            <div>
+              <p class="eyebrow">WELCOME HOME, ALICE</p>
+              <h1 id="home-title">Good afternoon<span>.</span></h1>
+              <p>Everything connected to <b>alice.geocities.eth</b></p>
+            </div>
+            <button class="outline-button" data-view-link="site">
+              View my place <span>↗</span>
+            </button>
+          </div>
+          <section class="place-hero">
+            <div class="hero-copy">
+              <p class="live"><i></i> YOUR PLACE IS LIVE</p>
+              <h2>A little piece of<br />the internet, <em>yours.</em></h2>
+              <p>
+                Share your corner, meet your neighbors, and make something
+                wonderfully you.
+              </p>
+              <button class="cream-button" data-view-link="site">
+                Visit my site <span>↗</span>
+              </button>
+            </div>
+            <div class="scene" aria-hidden="true">
+              <div class="scene-sun"></div>
+              <div class="cloud cloud-one">☁</div>
+              <div class="cloud cloud-two">☁</div>
+              <div class="hill hill-back"></div>
+              <div class="hill hill-front"></div>
+              <div class="house"><i></i><b></b></div>
+              <p>alice's place</p>
+            </div>
+          </section>
+          <div class="dashboard-grid">
+            <section class="card inbox-card">
+              <div class="card-title">
+                <div>
+                  <p class="eyebrow">COMMUNICATION</p>
+                  <h2>Your inbox</h2>
+                </div>
+                <button class="circle-button" data-compose aria-label="Compose">
+                  +
+                </button>
+              </div>
+              <div class="tabs" role="tablist">
+                <button class="tab is-active" data-inbox="messages" role="tab">
+                  Messages <span>2</span></button
+                ><button class="tab" data-inbox="mail" role="tab">
+                  Mail <span>1</span>
+                </button>
+              </div>
+              <div class="inbox-list is-active" id="messages">
+                <button class="message">
+                  <span class="avatar avatar-maya">M</span
+                  ><span
+                    ><b>Maya Rivera</b
+                    ><small>Love the new photo series! That...</small></span
+                  ><time>2m</time><i></i></button
+                ><button class="message">
+                  <span class="avatar avatar-jo">J</span
+                  ><span
+                    ><b>Jo's Vinyl Vault</b
+                    ><small>Just followed your place ✦</small></span
+                  ><time>1h</time>
+                </button>
+              </div>
+              <div class="inbox-list" id="mail">
+                <button class="message">
+                  <span class="avatar avatar-news">N</span
+                  ><span
+                    ><b>Neighborhood Club</b
+                    ><small>Your weekly neighborhood picks...</small></span
+                  ><time>9:41</time><i></i>
+                </button>
+              </div>
+              <button
+                class="text-button"
+                data-toast="Your full inbox is coming soon"
+              >
+                See all messages <span>→</span>
+              </button>
+            </section>
+            <section class="card wallet-card">
+              <div class="card-title">
+                <div>
+                  <p class="eyebrow">YOUR WALLET</p>
+                  <h2>Money, made simple</h2>
+                </div>
+                <span class="wallet-mark">◌</span>
+              </div>
+              <p class="balance-label">AVAILABLE BALANCE</p>
+              <strong class="balance">$1,248<small>.32</small></strong>
+              <p class="growth">↗ 12.4% <span>this month</span></p>
+              <div class="wallet-actions">
+                <button data-toast="Send money flow opened">
+                  <span>↑</span>Send</button
+                ><button data-toast="Your receive link is ready">
+                  <span>↓</span>Receive</button
+                ><button data-view-link="wallet">
+                  <span>↗</span>Activity
+                </button>
+              </div>
+            </section>
+          </div>
+          <section class="activity">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">AROUND YOUR PLACE</p>
+                <h2>Things happening</h2>
+              </div>
+              <button class="text-button" data-view-link="explore">
+                Explore GeoCities <span>→</span>
+              </button>
+            </div>
+            <div class="activity-list">
+              <article>
+                <span class="activity-icon pink">♥</span>
+                <p>
+                  <b>Samira</b> signed your guestbook
+                  <small>“Your colors are unreal. Keep going!”</small>
+                </p>
+                <time>18m</time>
+              </article>
+              <article>
+                <span class="activity-icon blue">✦</span>
+                <p>
+                  <b>12 people</b> visited your site today
+                  <small>That's 4 more than yesterday.</small>
+                </p>
+                <time>Today</time>
+              </article>
+              <article>
+                <span class="activity-icon orange">◒</span>
+                <p>
+                  <b>Devin</b> sent you $5.00
+                  <small>“For the lens fund ☻”</small>
+                </p>
+                <time>Yesterday</time>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <section class="view" id="wallet" aria-labelledby="wallet-title">
+          <div class="page-heading">
+            <p class="eyebrow">ALICE.GEOCITIES.ETH</p>
+            <h1 id="wallet-title">Your money<span>.</span></h1>
+            <p>Send, receive, and keep track — without the jargon.</p>
+          </div>
+          <section class="wallet-hero">
+            <p>YOUR TOTAL BALANCE</p>
+            <h2>$1,248.32</h2>
+            <span>+$138.17 <b>this month</b></span>
+            <div>
+              <button data-toast="Send money flow opened">Send money ↑</button
+              ><button
+                class="outline-light"
+                data-toast="Your receive link is ready"
+              >
+                Receive ↓
+              </button>
+            </div>
+          </section>
+          <section class="card transaction-card">
+            <div class="section-heading">
+              <h2>Recent activity</h2>
+              <button
+                class="text-button"
+                data-toast="Your complete wallet history is coming soon"
+              >
+                View all <span>→</span>
+              </button>
+            </div>
+            <div class="transaction">
+              <span class="activity-icon orange">↓</span>
+              <p>
+                <b>Payment from Devin</b
+                ><small>Yesterday · “For the lens fund ☻”</small>
+              </p>
+              <strong>+$5.00</strong>
+            </div>
+            <div class="transaction">
+              <span class="activity-icon purple">↑</span>
+              <p>
+                <b>Sent to Analog Library</b
+                ><small>Oct 20 · Print zine order</small>
+              </p>
+              <strong class="outgoing">−$18.00</strong>
+            </div>
+            <div class="transaction">
+              <span class="activity-icon blue">◌</span>
+              <p>
+                <b>Payment from Noa</b><small>Oct 18 · Guestbook tip</small>
+              </p>
+              <strong>+$12.00</strong>
+            </div>
+          </section>
+        </section>
+
+        <section class="view" id="explore" aria-labelledby="explore-title">
+          <div class="page-heading">
+            <p class="eyebrow">EXPLORE THE NEIGHBORHOOD</p>
+            <h1 id="explore-title">Wander a while<span>.</span></h1>
+            <p>Interesting places made by interesting people.</p>
+            <label class="search"
+              ><span>⌕</span
+              ><input
+                type="search"
+                placeholder="Search people, places, and things..."
+                aria-label="Search places"
+            /></label>
+          </div>
+          <section class="surprise">
+            <div>
+              <p class="eyebrow">FEELING CURIOUS?</p>
+              <h2>Let the internet<br /><em>surprise you.</em></h2>
+            </div>
+            <button data-toast="Taking you somewhere unexpected...">
+              Surprise me <span>✦</span>
+            </button>
+          </section>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">TRENDING PLACES</p>
+              <h2>Made with feeling</h2>
+            </div>
+            <button
+              class="text-button"
+              data-toast="More places are arriving every day"
+            >
+              See all <span>→</span>
+            </button>
+          </div>
+          <div class="place-grid">
+            <article class="place-card blue-place">
+              <div class="place-art"><span>☻</span><i>〜</i></div>
+              <p>ART &amp; DESIGN</p>
+              <h2>Good Weird Things</h2>
+              <small>mika.geocities.eth</small
+              ><button data-follow>+ Follow</button>
+            </article>
+            <article class="place-card orange-place">
+              <div class="place-art"><span>✿</span><i>☼</i></div>
+              <p>FOOD &amp; FRIENDS</p>
+              <h2>Sunday Supper Club</h2>
+              <small>noa.geocities.eth</small
+              ><button data-follow>+ Follow</button>
+            </article>
+            <article class="place-card pink-place">
+              <div class="place-art"><span>♥</span><i>★</i></div>
+              <p>MUSIC</p>
+              <h2>Lo-Fi Forever</h2>
+              <small>alex.geocities.eth</small
+              ><button data-follow>+ Follow</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="site" aria-labelledby="site-title">
+          <div class="page-heading">
+            <p class="eyebrow">YOUR PUBLISHED PLACE</p>
+            <h1 id="site-title">Alice's visual diary<span>.</span></h1>
+            <p>Live at <b>alice.geocities.eth</b> · Version 12</p>
+          </div>
+          <section class="site-workbench">
+            <div class="site-preview">
+              <div class="browser-bar">
+                <i></i><i></i><i></i><b>alice.geocities.eth</b>
+              </div>
+              <div class="preview-content">
+                <p>ALICE / 2024</p>
+                <h2>Collected<br /><em>light.</em></h2>
+                <span
+                  >photographs, small moments,<br />and places I want to
+                  remember.</span
+                ><b class="preview-sun">☼</b><i class="photo photo-one"></i
+                ><i class="photo photo-two"></i>
+              </div>
+            </div>
+            <div class="builder">
+              <p class="eyebrow">AI WEBMASTER</p>
+              <h2>What should we make next?</h2>
+              <p>
+                Your webmaster is ready to update your place. Every change is
+                saved as a version you can restore.
+              </p>
+              <label class="prompt"
+                ><input
+                  placeholder="Make the homepage more personal..."
+                  aria-label="Ask your AI webmaster"
+                /><button
+                  data-toast="Your webmaster is preparing a draft"
+                  aria-label="Send prompt"
+                >
+                  ↑
+                </button></label
+              >
+              <div class="chips">
+                <button data-prompt="Add a guestbook">+ Add a guestbook</button
+                ><button data-prompt="Create a photo page">
+                  + Create a photo page</button
+                ><button data-prompt="Make it feel more 1998">
+                  + Make it feel more 1998
+                </button>
+              </div>
+              <button
+                class="text-button"
+                data-toast="Opening alice.geocities.eth"
+              >
+                ↗ View published site
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <section class="view" id="settings" aria-labelledby="settings-title">
+          <div class="page-heading">
+            <p class="eyebrow">ACCOUNT &amp; IDENTITY</p>
+            <h1 id="settings-title">Make it yours<span>.</span></h1>
+            <p>Control how your place shows up on the internet.</p>
+          </div>
+          <div class="settings-list">
+            <button data-toast="Identity settings coming soon">
+              <span class="setting-icon pink">A</span
+              ><span
+                ><b>Identity</b><small>Alice · alice.geocities.eth</small></span
+              ><i>›</i></button
+            ><button data-toast="Wallet settings coming soon">
+              <span class="setting-icon blue">◒</span
+              ><span
+                ><b>Wallet &amp; payments</b
+                ><small>Security, recovery, and connected apps</small></span
+              ><i>›</i></button
+            ><button data-toast="Communication settings coming soon">
+              <span class="setting-icon orange">✉</span
+              ><span
+                ><b>Communication</b
+                ><small>Mail, messages, and notifications</small></span
+              ><i>›</i></button
+            ><button data-toast="AI permissions coming soon">
+              <span class="setting-icon purple">✦</span
+              ><span
+                ><b>AI Webmaster</b
+                ><small>Permissions and approval settings</small></span
+              ><i>›</i>
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <button class="mobile-compose" data-compose aria-label="Create">+</button>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <button class="is-active" data-view="home">⌂<span>Home</span></button
+      ><button data-view="wallet">◒<span>Wallet</span></button
+      ><button data-view="explore">⌕<span>Explore</span></button
+      ><button data-view="site">▧<span>Site</span></button
+      ><button data-view="settings">⚙<span>Settings</span></button>
+    </nav>
+    <div class="modal" id="compose-modal" aria-hidden="true">
+      <section role="dialog" aria-modal="true" aria-labelledby="compose-title">
+        <button class="close" data-close aria-label="Close">×</button>
+        <p class="eyebrow">MAKE A MOVE</p>
+        <h2 id="compose-title">What do you want<br />to do?</h2>
+        <button data-toast="New message started">
+          ✦ <span><b>Message</b><small>Talk to a neighbor</small></span
+          ><i>›</i></button
+        ><button data-toast="New email started">
+          ✉ <span><b>Email</b><small>Send something out</small></span
+          ><i>›</i></button
+        ><button data-view-link="site" data-close>
+          ▧ <span><b>Create page</b><small>Build out your place</small></span
+          ><i>›</i></button
+        ><button data-toast="Send money flow opened">
+          ◒ <span><b>Send money</b><small>Pay an identity</small></span
+          ><i>›</i>
+        </button>
+      </section>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

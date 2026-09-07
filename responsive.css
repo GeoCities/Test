@@ -1,0 +1,190 @@
+@media (max-width: 800px) {
+  body {
+    padding-bottom: 75px;
+  }
+  .app-shell {
+    display: block;
+  }
+  .sidebar {
+    display: none;
+  }
+  .topbar {
+    height: 61px;
+    padding: 0 20px;
+  }
+  .topbar > p {
+    display: none;
+  }
+  .mobile-brand {
+    display: block;
+    border: 0;
+    background: none;
+  }
+  .topbar .icon-button {
+    display: none;
+  }
+  .compose-button {
+    padding: 9px 12px;
+  }
+  .view {
+    padding: 32px 20px 0;
+  }
+  .welcome {
+    display: block;
+  }
+  .welcome h1,
+  .page-heading h1 {
+    font-size: 38px;
+  }
+  .welcome .outline-button {
+    margin-top: 18px;
+  }
+  .place-hero {
+    grid-template-columns: 1fr;
+    min-height: 445px;
+  }
+  .hero-copy {
+    padding: 28px;
+  }
+  .scene {
+    min-height: 200px;
+  }
+  .scene-sun {
+    top: 15px;
+  }
+  .dashboard-grid,
+  .site-workbench {
+    grid-template-columns: 1fr;
+  }
+  .activity {
+    margin-top: 35px;
+  }
+  .section-heading {
+    align-items: start;
+  }
+  .section-heading .text-button {
+    white-space: nowrap;
+  }
+  .place-grid {
+    grid-template-columns: 1fr;
+  }
+  .place-card {
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    column-gap: 14px;
+    padding: 10px;
+  }
+  .place-art {
+    grid-row: 1/5;
+    height: 120px;
+    font-size: 46px;
+  }
+  .place-art i {
+    font-size: 35px;
+  }
+  .place-card > p {
+    margin-top: 4px;
+  }
+  .place-card h2 {
+    font-size: 18px;
+  }
+  .place-card button {
+    width: max-content;
+    margin-top: 8px;
+  }
+  .wallet-hero {
+    padding: 30px;
+  }
+  .site-preview {
+    order: 2;
+  }
+  .builder {
+    order: 1;
+  }
+  .mobile-nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fffdf8;
+    border-top: 1px solid var(--line);
+    z-index: 3;
+    padding: 4px 7px;
+  }
+  .mobile-nav button {
+    font-size: 18px;
+    color: #81776d;
+    display: grid;
+    gap: 1px;
+    place-items: center;
+    min-width: 48px;
+  }
+  .mobile-nav button span {
+    font-size: 9px;
+  }
+  .mobile-nav button.is-active {
+    color: #dd5e58;
+  }
+  .mobile-compose {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    right: 21px;
+    bottom: 78px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background: var(--pink);
+    color: #fff;
+    font-size: 29px;
+    box-shadow: 0 8px 18px #a5363066;
+    z-index: 2;
+  }
+  .activity-list article {
+    gap: 10px;
+  }
+  .activity-list article time {
+    align-self: start;
+  }
+  .preview-content {
+    height: 285px;
+  }
+}
+@media (max-width: 430px) {
+  .topbar {
+    padding: 0 16px;
+  }
+  .view {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .hero-copy h2 {
+    font-size: 30px;
+  }
+  .card {
+    padding: 18px;
+  }
+  .wallet-actions button {
+    padding: 8px 4px;
+  }
+  .wallet-hero h2 {
+    font-size: 37px;
+  }
+  .surprise {
+    padding: 25px 22px;
+  }
+  .surprise h2 {
+    font-size: 26px;
+  }
+  .surprise button {
+    font-size: 11px;
+    padding: 9px;
+  }
+  .section-heading h2 {
+    font-size: 19px;
+  }
+}
